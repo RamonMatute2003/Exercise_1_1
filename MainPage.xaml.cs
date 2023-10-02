@@ -1,5 +1,5 @@
-﻿
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Exercise_1_1 {
     public partial class MainPage:ContentPage {
@@ -12,14 +12,30 @@ namespace Exercise_1_1 {
                 var button_text=button_clicked.Text;
 
                 if(validation()){
-                    if(txt_num2.Text=="0"||txt_num2.Text=="-0") {
-                        DisplayAlert("Error","No se puede dividir entre 0","OK");
+                    if(button_text=="Division"){
+                        double number;
+
+                        if(double.TryParse(txt_num2.Text,out number)){
+                            if(number>0.0){
+                                calculate(button_text);
+                            }else{
+                                DisplayAlert("Error","No se puede dividir entre 0","OK");
+                            }
+                            
+                        }else{
+                            DisplayAlert("Error","No se puede dividir entre 0","OK");
+                        }
+                        
                     }else{
-                        Mathematical_operations mathematical_operation = new Mathematical_operations(Convert.ToDouble(txt_num1.Text),Convert.ToDouble(txt_num2.Text),button_text);
-                        Navigation.PushAsync(new Page_result());
+                        calculate(button_text);
                     }
                 }
             }
+        }
+
+        private void calculate(string button_text) {
+            Mathematical_operations mathematical_operation = new Mathematical_operations(Convert.ToDouble(txt_num1.Text),Convert.ToDouble(txt_num2.Text),button_text);
+            Navigation.PushAsync(new Page_result());
         }
 
         private bool validation(){
