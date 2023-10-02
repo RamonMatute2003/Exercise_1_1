@@ -9,7 +9,7 @@
             Padding="30,0"
             VerticalOptions="Start">
 
-<<<<<<< HEAD
+
             <Label Text="Numero1" SemanticProperties.HeadingLevel="Level1" FontSize="18" HorizontalOptions="Start" TextColor="Black"/>
 
             <Entry Keyboard="Numeric" Placeholder="Ingrese un numero" x:Name="txt_num1" Background="blue" TextColor="White" PlaceholderColor="DarkGray" Margin="0,0,0,20"></Entry>
@@ -26,28 +26,6 @@
             <Button x:Name="btn_subtraction" Text="Restar" SemanticProperties.Hint="Boton de restar" Clicked="acction" HorizontalOptions="Center" BackgroundColor="Yellow" WidthRequest="200" Margin="0,0,0,10" TextColor="Black"/>
             <Button x:Name="btn_multiplication" Text="Division" SemanticProperties.Hint="Boton de división" Clicked="acction" HorizontalOptions="Center" BackgroundColor="Yellow" WidthRequest="200" Margin="0,0,0,10" TextColor="Black"/>
             <Button x:Name="btn_division" Text="Multiplicacion" SemanticProperties.Hint="Boton de multiplicación" Clicked="acction" HorizontalOptions="Center" BackgroundColor="Yellow" WidthRequest="200" Margin="0,0,0,10" TextColor="Black"/>
-=======
-            <Label
-                Text="Numero1"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="18"
-                HorizontalOptions="Start" />
-
-            <Entry Keyboard="Numeric" Placeholder="Ingrese un numero" x:Name="txt_num1"></Entry>
-            
-            <Label
-                Text="Numero1"
-                SemanticProperties.HeadingLevel="Level2"
-                FontSize="18"
-                HorizontalOptions="Start" />
-
-            <Entry Keyboard="Numeric" Placeholder="Ingrese un numero" x:Name="txt_num2"></Entry>
-
-            <Button x:Name="btn_sum" Text="Sumar" SemanticProperties.Hint="Boton de sumar" Clicked="acction" HorizontalOptions="Center" />
-            <Button x:Name="btn_subtraction" Text="Restar" SemanticProperties.Hint="Boton de restar" Clicked="acction" HorizontalOptions="Center" />
-            <Button x:Name="btn_multiplication" Text="Division" SemanticProperties.Hint="Boton de división" Clicked="acction" HorizontalOptions="Center" />
-            <Button x:Name="btn_division" Text="Multiplicacion" SemanticProperties.Hint="Boton de multiplicación" Clicked="acction" HorizontalOptions="Center" />
->>>>>>> 3542df3427385a37646680afe0b40ec5221dbf0e
         </VerticalStackLayout>
     </ScrollView>
 
